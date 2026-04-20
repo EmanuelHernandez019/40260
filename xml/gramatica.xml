@@ -2,9 +2,40 @@
 <!DOCTYPE miniflow SYSTEM "miniflow.dtd">
 
 <miniflow>
+
     <inicio>INICIO</inicio>
+
     <instrucciones>
-        <mostrar>Hola</mostrar>
+
+        <mostrar>Bienvenido al cine</mostrar>
+
+        <leer>edad</leer>
+
+        <si>
+            <condicion>edad >= 18</condicion>
+            <entonces>
+                <mostrar>Puedes entrar a cualquier sala</mostrar>
+            </entonces>
+            <sino>
+                <mostrar>Solo puedes entrar a salas familiares</mostrar>
+            </sino>
+        </si>
+
+        <leer>boleto</leer>
+
+        <mientras>
+            <condicion>boleto != valido</condicion>
+            <mostrar>Boleto no válido, intenta de nuevo</mostrar>
+            <leer>boleto</leer>
+        </mientras>
+
+        <repetir>
+            <veces>2</veces>
+            <mostrar>Disfruta la película</mostrar>
+        </repetir>
+
     </instrucciones>
+
     <fin>FIN</fin>
+
 </miniflow>

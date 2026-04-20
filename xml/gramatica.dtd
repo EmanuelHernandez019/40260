@@ -1,6 +1,8 @@
 <!ELEMENT miniflow (inicio, instrucciones, fin)>
+
 <!ELEMENT inicio (#PCDATA)>
 <!ELEMENT fin (#PCDATA)>
+
 <!ELEMENT instrucciones (mostrar | leer | si | repetir | mientras)+>
 
 <!ELEMENT mostrar (#PCDATA)>
