@@ -9,10 +9,10 @@
 
         <mostrar>Bienvenido al cine</mostrar>
 
-        <leer>Edad</leer>
+        <leer>edad</leer>
 
         <si>
-            <condicion>Edad >= 18</condicion>
+            <condicion>edad >= 18</condicion>
             <entonces>
                 <mostrar>Puedes entrar a cualquier sala</mostrar>
             </entonces>
